@@ -7,13 +7,11 @@
 	<style type="text/css">
 		body {
 			margin: 0px;
-			/*background-color: #828181;
-			background-image: url(bg1.png);
-			background-blend-mode: lighten;
-			background-repeat: repeat;*/
-			/*background-size: cover;*/
+			background-color: #828181;
+			background-image: url(bg3.png);
+			background-blend-mode: multiply;
 		}
-		.wrapped {
+		.container {
 			background-image: url(landscape3.jpg);
 			background-size: cover;
 			padding-top: 100px;
@@ -21,26 +19,48 @@
 			padding-left: 6rem;
 		}
 
-		h1 {
-			text-align: left;
-			font-family: helvetica;
-			color: #ffffff;
+		.wrapped {
+			display: inline-block;
 		}
 
+		h1 {
+			font-size: 30px;
+			text-align: left;
+			font-family: monospace;
+			color: #ffffff;
+			border-right: 5px white solid;
+			width: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			animation:
+				typing 3s steps(22),
+				cursor .2s step-end infinite alternate;
+		}
+
+
+		@keyframes cursor {
+			50% { border-color:transparent; }
+		}
+
+		@keyframes typing {
+			from { width:0 }
+			100% { animation-play-state:paused }
+		}
+
+
 		.letter {
-			margin:50px 100px 50px 100px;
-			border-radius: 25px;
-			/*background-color: #000000;*/
-			/*background-color: lightgrey;*/
+			margin:0px 100px 0px 100px;
+			background-color: lightgrey;
 			padding: 20px;
 		}
 
 		h2 {
-			font-family: helvetica;
+			margin-top: 50px;
+			font-family: sans-serif;
 		}
 
 		h3 {
-			font-family: helvetica;
+			font-family: sans-serif;
 			margin-left: 20px;
 		}
 
@@ -58,7 +78,7 @@
   			left: 0;
   			bottom: 0;
   			width: 100%;
-  			background-color: darkgray;
+  			background-color: #262626;
   			color: white;
   			text-align: center;
 		}
@@ -70,31 +90,32 @@
 	</style>
 </head>
 <body>
-	<div class="wrapped"><h1>This is my confession</h1></div>
+	<div class="container">
+		<div class="wrapped">
+			<h1>This is my confession.</h1>
+		</div>
+	</div>
 	
 	<div class="letter">
 		<h2>Dear Diary</h2>
 
-		<div class="idk">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+		<div class="idk">Ma sebelumnya aku mau minta maaf. Aku ada rasa sma km.</div>
 
-		<div class="idk">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+		<div class="idk">Aku merasa bersalah ir, karena km udh percaya untuk curhat sma aku. Aku minta maaf kalo km ngira aku maanfatin kesempatan dan aku ngerti kenapa km mikir gitu, tapi jujur bukan itu niat ku. Aku pure cuma mau dengerin km curhat, mungkin dengan km cerita ke orang lain bisa buat km tenang.</div>
 
-		<div class="idk">So, what do you say? 🤏🙂🙏</div>
+		<div class="idk">Aku sebenarnya gak berniat ngasih tau km dalam waktu dekat, Karena aku tau kemungkinan km jadi punyaku tuh slim to none gitu nah, selain dri latar kita yg berbeda aku jg sadar aku siapa, Bukanya aku pesimis tapi aku realistis. Aku udah gak bisa nahan-nahan lagi ma, maaf kalo aku egois.</div>
+
+		<div class="idk">Apapun pilihan km aku siap nerima response yg akan km ksh. Kalo memang nt yaudah aku nerima dengan sepenuh hati, kalo km mau aku untuk berhenti berharap aku akan berhenti berharap saat itu juga, walaupun aku tetap msh punya feeling sama km untuk gak tau berapa lama, yang jelas lama. Kalo km punya perasaan yg sama ("kalo") ya puji tuhan. Intinya apapun yang terjadi so be it.</div>
+
+		<div class="idk">Aku berharap apapun jawaban km kita tetap bisa jadi teman 😊 walaupun nantinya agak canggung dikit, dikit🤏. Tp mudahan gk akan lama🙏. Itu aja sih yang mau ku bilang, Sekali lagi aku minta maaf ma. Have a nice day :).</div>
+
+		<div class="idk">Sincerely, Bima.</div>
+
+		
+		<div class="idk">So, what do you say?</div>
+
+		<div style="margin-bottom: 50px;"></div>
+
 	</div>
 
 	<div class="footer">
